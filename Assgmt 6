@@ -1,0 +1,95 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyN479cgd1hqCm+BBFKuUgzx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/janemajor/Repository/blob/master/Assgmt%206\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uMRFb9burwu9",
+        "outputId": "05506de1-4c2a-4dad-eba3-99f67ae9b64b",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 272
+        }
+      },
+      "source": [
+        "#0\n",
+        "tacos=[\"Hello\", \"World\"]\n",
+        "tacos\n",
+        "#1\n",
+        "food=[]\n",
+        "while True:\n",
+        "    print('Enter the name of a food (Or enter stop to stop.):')\n",
+        "    name = input()\n",
+        "    food.append(name)\n",
+        "    if name==\"olives\":\n",
+        "      food.remove(\"olives\")\n",
+        "    if name=='stop':\n",
+        "      food.remove('stop')\n",
+        "      break\n",
+        "    \n",
+        "print('Food list:')\n",
+        "for name in food:\n",
+        "    print('  ' + name)\n",
+        "#2\n",
+        "print('Enter a food to delete')\n",
+        "deletefood=input()\n",
+        "food.remove(deletefood)\n",
+        "print('Food list:')\n",
+        "for name in food:\n",
+        "    print('  ' + name)\n",
+        "#3\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the name of a food (Or enter stop to stop.):\n",
+            "sugar\n",
+            "Enter the name of a food (Or enter stop to stop.):\n",
+            "butter\n",
+            "Enter the name of a food (Or enter stop to stop.):\n",
+            "olives\n",
+            "Enter the name of a food (Or enter stop to stop.):\n",
+            "stop\n",
+            "Food list:\n",
+            "  sugar\n",
+            "  butter\n",
+            "Enter a food to delete\n",
+            "butter\n",
+            "Food list:\n",
+            "  sugar\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
